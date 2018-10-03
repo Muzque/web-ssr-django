@@ -2,15 +2,509 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f7cba0c3-d9f4-4007-a39f-cf69b919c2d8" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/javascript/weather/weather.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/templates/weather/index.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/templates/weather/weather.html" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/proj_django/settings.py" afterPath="$PROJECT_DIR$/proj_django/settings.py" />
-      <change beforePath="$PROJECT_DIR$/proj_django/urls.py" afterPath="$PROJECT_DIR$/proj_django/urls.py" />
-      <change beforePath="$PROJECT_DIR$/weather/urls.py" afterPath="$PROJECT_DIR$/weather/urls.py" />
-      <change beforePath="$PROJECT_DIR$/weather/views.py" afterPath="$PROJECT_DIR$/weather/views.py" />
+      <change beforePath="$PROJECT_DIR$/static/Semantic-UI-CSS-master/.versions" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/Semantic-UI-CSS-master/LICENSE" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/Semantic-UI-CSS-master/README.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/Semantic-UI-CSS-master/components/accordion.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/Semantic-UI-CSS-master/components/accordion.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/Semantic-UI-CSS-master/components/accordion.min.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/Semantic-UI-CSS-master/components/accordion.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/Semantic-UI-CSS-master/components/ad.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/Semantic-UI-CSS-master/components/ad.min.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/Semantic-UI-CSS-master/components/api.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/Semantic-UI-CSS-master/components/api.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/Semantic-UI-CSS-master/components/breadcrumb.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/Semantic-UI-CSS-master/components/breadcrumb.min.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/Semantic-UI-CSS-master/components/button.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/Semantic-UI-CSS-master/components/button.min.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/Semantic-UI-CSS-master/components/card.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/Semantic-UI-CSS-master/components/card.min.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/Semantic-UI-CSS-master/components/checkbox.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/Semantic-UI-CSS-master/components/checkbox.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/Semantic-UI-CSS-master/components/checkbox.min.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/Semantic-UI-CSS-master/components/checkbox.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/Semantic-UI-CSS-master/components/colorize.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/Semantic-UI-CSS-master/components/colorize.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/Semantic-UI-CSS-master/components/comment.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/Semantic-UI-CSS-master/components/comment.min.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/Semantic-UI-CSS-master/components/container.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/Semantic-UI-CSS-master/components/container.min.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/Semantic-UI-CSS-master/components/dimmer.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/Semantic-UI-CSS-master/components/dimmer.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/Semantic-UI-CSS-master/components/dimmer.min.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/Semantic-UI-CSS-master/components/dimmer.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/Semantic-UI-CSS-master/components/divider.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/Semantic-UI-CSS-master/components/divider.min.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/Semantic-UI-CSS-master/components/dropdown.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/Semantic-UI-CSS-master/components/dropdown.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/Semantic-UI-CSS-master/components/dropdown.min.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/Semantic-UI-CSS-master/components/dropdown.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/Semantic-UI-CSS-master/components/embed.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/Semantic-UI-CSS-master/components/embed.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/Semantic-UI-CSS-master/components/embed.min.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/Semantic-UI-CSS-master/components/embed.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/Semantic-UI-CSS-master/components/feed.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/Semantic-UI-CSS-master/components/feed.min.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/Semantic-UI-CSS-master/components/flag.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/Semantic-UI-CSS-master/components/flag.min.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/Semantic-UI-CSS-master/components/form.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/Semantic-UI-CSS-master/components/form.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/Semantic-UI-CSS-master/components/form.min.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/Semantic-UI-CSS-master/components/form.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/Semantic-UI-CSS-master/components/grid.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/Semantic-UI-CSS-master/components/grid.min.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/Semantic-UI-CSS-master/components/header.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/Semantic-UI-CSS-master/components/header.min.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/Semantic-UI-CSS-master/components/icon.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/Semantic-UI-CSS-master/components/icon.min.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/Semantic-UI-CSS-master/components/image.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/Semantic-UI-CSS-master/components/image.min.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/Semantic-UI-CSS-master/components/input.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/Semantic-UI-CSS-master/components/input.min.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/Semantic-UI-CSS-master/components/item.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/Semantic-UI-CSS-master/components/item.min.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/Semantic-UI-CSS-master/components/label.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/Semantic-UI-CSS-master/components/label.min.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/Semantic-UI-CSS-master/components/list.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/Semantic-UI-CSS-master/components/list.min.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/Semantic-UI-CSS-master/components/loader.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/Semantic-UI-CSS-master/components/loader.min.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/Semantic-UI-CSS-master/components/menu.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/Semantic-UI-CSS-master/components/menu.min.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/Semantic-UI-CSS-master/components/message.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/Semantic-UI-CSS-master/components/message.min.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/Semantic-UI-CSS-master/components/modal.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/Semantic-UI-CSS-master/components/modal.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/Semantic-UI-CSS-master/components/modal.min.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/Semantic-UI-CSS-master/components/modal.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/Semantic-UI-CSS-master/components/nag.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/Semantic-UI-CSS-master/components/nag.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/Semantic-UI-CSS-master/components/nag.min.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/Semantic-UI-CSS-master/components/nag.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/Semantic-UI-CSS-master/components/popup.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/Semantic-UI-CSS-master/components/popup.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/Semantic-UI-CSS-master/components/popup.min.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/Semantic-UI-CSS-master/components/popup.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/Semantic-UI-CSS-master/components/progress.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/Semantic-UI-CSS-master/components/progress.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/Semantic-UI-CSS-master/components/progress.min.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/Semantic-UI-CSS-master/components/progress.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/Semantic-UI-CSS-master/components/rail.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/Semantic-UI-CSS-master/components/rail.min.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/Semantic-UI-CSS-master/components/rating.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/Semantic-UI-CSS-master/components/rating.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/Semantic-UI-CSS-master/components/rating.min.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/Semantic-UI-CSS-master/components/rating.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/Semantic-UI-CSS-master/components/reset.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/Semantic-UI-CSS-master/components/reset.min.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/Semantic-UI-CSS-master/components/reveal.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/Semantic-UI-CSS-master/components/reveal.min.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/Semantic-UI-CSS-master/components/search.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/Semantic-UI-CSS-master/components/search.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/Semantic-UI-CSS-master/components/search.min.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/Semantic-UI-CSS-master/components/search.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/Semantic-UI-CSS-master/components/segment.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/Semantic-UI-CSS-master/components/segment.min.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/Semantic-UI-CSS-master/components/shape.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/Semantic-UI-CSS-master/components/shape.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/Semantic-UI-CSS-master/components/shape.min.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/Semantic-UI-CSS-master/components/shape.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/Semantic-UI-CSS-master/components/sidebar.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/Semantic-UI-CSS-master/components/sidebar.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/Semantic-UI-CSS-master/components/sidebar.min.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/Semantic-UI-CSS-master/components/sidebar.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/Semantic-UI-CSS-master/components/site.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/Semantic-UI-CSS-master/components/site.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/Semantic-UI-CSS-master/components/site.min.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/Semantic-UI-CSS-master/components/site.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/Semantic-UI-CSS-master/components/state.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/Semantic-UI-CSS-master/components/state.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/Semantic-UI-CSS-master/components/statistic.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/Semantic-UI-CSS-master/components/statistic.min.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/Semantic-UI-CSS-master/components/step.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/Semantic-UI-CSS-master/components/step.min.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/Semantic-UI-CSS-master/components/sticky.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/Semantic-UI-CSS-master/components/sticky.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/Semantic-UI-CSS-master/components/sticky.min.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/Semantic-UI-CSS-master/components/sticky.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/Semantic-UI-CSS-master/components/tab.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/Semantic-UI-CSS-master/components/tab.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/Semantic-UI-CSS-master/components/tab.min.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/Semantic-UI-CSS-master/components/tab.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/Semantic-UI-CSS-master/components/table.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/Semantic-UI-CSS-master/components/table.min.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/Semantic-UI-CSS-master/components/transition.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/Semantic-UI-CSS-master/components/transition.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/Semantic-UI-CSS-master/components/transition.min.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/Semantic-UI-CSS-master/components/transition.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/Semantic-UI-CSS-master/components/video.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/Semantic-UI-CSS-master/components/video.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/Semantic-UI-CSS-master/components/video.min.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/Semantic-UI-CSS-master/components/video.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/Semantic-UI-CSS-master/components/visibility.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/Semantic-UI-CSS-master/components/visibility.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/Semantic-UI-CSS-master/components/visit.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/Semantic-UI-CSS-master/components/visit.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/Semantic-UI-CSS-master/package.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/Semantic-UI-CSS-master/package.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/Semantic-UI-CSS-master/semantic.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/Semantic-UI-CSS-master/semantic.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/Semantic-UI-CSS-master/semantic.min.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/Semantic-UI-CSS-master/semantic.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/Semantic-UI-CSS-master/themes/default/assets/fonts/brand-icons.eot" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/Semantic-UI-CSS-master/themes/default/assets/fonts/brand-icons.svg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/Semantic-UI-CSS-master/themes/default/assets/fonts/brand-icons.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/Semantic-UI-CSS-master/themes/default/assets/fonts/brand-icons.woff" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/Semantic-UI-CSS-master/themes/default/assets/fonts/brand-icons.woff2" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/Semantic-UI-CSS-master/themes/default/assets/fonts/icons.eot" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/Semantic-UI-CSS-master/themes/default/assets/fonts/icons.otf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/Semantic-UI-CSS-master/themes/default/assets/fonts/icons.svg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/Semantic-UI-CSS-master/themes/default/assets/fonts/icons.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/Semantic-UI-CSS-master/themes/default/assets/fonts/icons.woff" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/Semantic-UI-CSS-master/themes/default/assets/fonts/icons.woff2" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/Semantic-UI-CSS-master/themes/default/assets/fonts/outline-icons.eot" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/Semantic-UI-CSS-master/themes/default/assets/fonts/outline-icons.svg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/Semantic-UI-CSS-master/themes/default/assets/fonts/outline-icons.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/Semantic-UI-CSS-master/themes/default/assets/fonts/outline-icons.woff" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/Semantic-UI-CSS-master/themes/default/assets/fonts/outline-icons.woff2" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/Semantic-UI-CSS-master/themes/default/assets/images/flags.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/javascript/weather/weather.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/jquery-3.3.1.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/.editorconfig" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/.eslintrc" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/.gitattributes" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/.github/ISSUE_TEMPLATE.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/.github/PULL_REQUEST_TEMPLATE.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/.gitignore" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/.prettierignore" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/.prettierrc" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/.travis.yml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/CHANGELOG.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/CNAME" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/CODE_OF_CONDUCT.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/CONTRIBUTING.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/Gruntfile.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/LICENSE" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/README.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/bower.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/css/prism.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/docs/js/init.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/docs/js/jquery.timeago.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/docs/js/lunr.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/docs/js/prism.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/docs/js/search.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/extras/noUiSlider/nouislider.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/extras/noUiSlider/nouislider.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/extras/noUiSlider/nouislider.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/fab-toolbar-demo.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/images/Alan.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/images/alex.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/images/alvin.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/images/bold.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/images/donate.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/images/favicon/apple-touch-icon-152x152.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/images/favicon/favicon-32x32.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/images/favicon/mstile-144x144.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/images/kevin.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/images/kmaterialize.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/images/m-logo-salmon.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/images/macbook-left.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/images/materialize.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/images/materialize_team.jpeg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/images/menu.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/images/metaphor.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/images/motion.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/images/office.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/images/parallax-template.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/images/parallax1.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/images/parallax2.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/images/responsive.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/images/sample-1.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/images/showcase/adbeus.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/images/showcase/closeheat.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/images/showcase/eadbox.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/images/showcase/joelcox.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/images/showcase/kioskbrowser.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/images/showcase/roboterwelt.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/images/showcase/stephaniejagiello.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/images/showcase/varun_malhotra.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/images/showcase/visitsarasota.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/images/showcase/webonise.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/images/starter-template.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/images/toast.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/images/yuna.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/jade/404.jade" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/jade/_footer.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/jade/_head.jade" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/jade/_navbar.jade" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/jade/_scripts.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/jade/about.jade" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/jade/about/about_content.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/jade/auto-init.jade" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/jade/autocomplete.jade" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/jade/badges.jade" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/jade/breadcrumbs.jade" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/jade/buttons.jade" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/jade/cards.jade" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/jade/carousel.jade" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/jade/checkboxes.jade" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/jade/chips.jade" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/jade/collapsible.jade" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/jade/collections.jade" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/jade/color.jade" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/jade/css-transitions.jade" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/jade/dropdown.jade" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/jade/feature-discovery.jade" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/jade/floating-action-button.jade" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/jade/footer.jade" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/jade/fullscreen-slider-demo.jade" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/jade/getting-started.jade" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/jade/getting_started/getting_started_content.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/jade/grid.jade" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/jade/helpers.jade" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/jade/icons.jade" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/jade/index.jade" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/jade/index/index_content.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/jade/media-css.jade" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/jade/media.jade" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/jade/mobile.jade" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/jade/mobile/mobile_content.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/jade/modals.jade" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/jade/navbar.jade" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/jade/page-contents/404_content.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/jade/page-contents/auto_init_content.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/jade/page-contents/autocomplete_content.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/jade/page-contents/badges_content.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/jade/page-contents/breadcrumbs_content.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/jade/page-contents/buttons_content.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/jade/page-contents/cards_content.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/jade/page-contents/carousel_content.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/jade/page-contents/checkboxes_content.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/jade/page-contents/chips_content.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/jade/page-contents/collapsible_content.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/jade/page-contents/collections_content.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/jade/page-contents/color_content.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/jade/page-contents/css-transitions_content.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/jade/page-contents/dropdown_content.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/jade/page-contents/featureDiscovery_content.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/jade/page-contents/floating-action-button-content.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/jade/page-contents/footer_content.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/jade/page-contents/fullscreen_slider_demo_content.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/jade/page-contents/grid_content.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/jade/page-contents/helpers_content.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/jade/page-contents/icons_content.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/jade/page-contents/media-css_content.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/jade/page-contents/media_content.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/jade/page-contents/modals_content.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/jade/page-contents/navbar_content.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/jade/page-contents/pagination_content.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/jade/page-contents/parallax_content.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/jade/page-contents/parallax_demo_content.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/jade/page-contents/pickers_content.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/jade/page-contents/preloader_content.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/jade/page-contents/pulse_content.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/jade/page-contents/pushpin_content.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/jade/page-contents/pushpin_demo_content.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/jade/page-contents/radio_buttons_content.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/jade/page-contents/range_content.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/jade/page-contents/sass_content.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/jade/page-contents/scrollspy_content.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/jade/page-contents/select_content.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/jade/page-contents/shadow_content.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/jade/page-contents/sidenav_content.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/jade/page-contents/support_us_content.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/jade/page-contents/switches_content.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/jade/page-contents/table_content.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/jade/page-contents/tabs_content.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/jade/page-contents/text_inputs_content.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/jade/page-contents/themes_content.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/jade/page-contents/toasts_content.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/jade/page-contents/tooltips_content.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/jade/page-contents/typography_content.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/jade/page-contents/waves_content.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/jade/pagination.jade" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/jade/parallax-demo.jade" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/jade/parallax.jade" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/jade/parallax/parallax_content.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/jade/pickers.jade" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/jade/preloader.jade" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/jade/pulse.jade" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/jade/pushpin-demo.jade" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/jade/pushpin.jade" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/jade/radio-buttons.jade" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/jade/range.jade" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/jade/sass.jade" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/jade/scrollspy.jade" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/jade/select.jade" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/jade/shadow.jade" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/jade/showcase.jade" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/jade/showcase/showcase_content.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/jade/sidenav.jade" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/jade/support-us.jade" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/jade/switches.jade" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/jade/table.jade" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/jade/tabs.jade" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/jade/text-inputs.jade" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/jade/themes.jade" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/jade/toasts.jade" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/jade/tooltips.jade" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/jade/typography.jade" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/jade/waves.jade" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/js/anime.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/js/autocomplete.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/js/buttons.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/js/cards.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/js/carousel.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/js/cash.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/js/characterCounter.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/js/chips.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/js/collapsible.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/js/component.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/js/datepicker.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/js/dropdown.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/js/forms.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/js/global.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/js/materialbox.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/js/modal.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/js/parallax.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/js/pushpin.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/js/range.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/js/scrollspy.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/js/select.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/js/sidenav.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/js/slider.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/js/tabs.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/js/tapTarget.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/js/timepicker.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/js/toasts.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/js/tooltip.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/js/waves.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/package-lock.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/package.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/package.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/res/MaterializeLogo-3.ai" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/res/MaterializeLogo-3.svg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/res/materialize.svg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/robots.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/sass/.npmignore" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/sass/_style.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/sass/components/_badges.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/sass/components/_buttons.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/sass/components/_cards.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/sass/components/_carousel.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/sass/components/_chips.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/sass/components/_collapsible.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/sass/components/_color-classes.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/sass/components/_color-variables.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/sass/components/_datepicker.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/sass/components/_dropdown.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/sass/components/_global.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/sass/components/_grid.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/sass/components/_icons-material-design.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/sass/components/_materialbox.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/sass/components/_modal.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/sass/components/_navbar.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/sass/components/_normalize.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/sass/components/_preloader.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/sass/components/_pulse.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/sass/components/_sidenav.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/sass/components/_slider.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/sass/components/_table_of_contents.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/sass/components/_tabs.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/sass/components/_tapTarget.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/sass/components/_timepicker.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/sass/components/_toast.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/sass/components/_tooltip.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/sass/components/_transitions.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/sass/components/_typography.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/sass/components/_variables.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/sass/components/_waves.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/sass/components/forms/_checkboxes.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/sass/components/forms/_file-input.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/sass/components/forms/_forms.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/sass/components/forms/_input-fields.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/sass/components/forms/_radio-buttons.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/sass/components/forms/_range.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/sass/components/forms/_select.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/sass/components/forms/_switches.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/sass/ghpages-materialize.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/sass/materialize.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/sitemap.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/templates/masonry-template/LICENSE" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/templates/masonry-template/background1.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/templates/masonry-template/background2.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/templates/masonry-template/background3.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/templates/masonry-template/css/style.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/templates/masonry-template/index.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/templates/masonry-template/js/init.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/templates/masonry-template/js/masonry.pkgd.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/templates/masonry-template/preview.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/templates/parallax-template.zip" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/templates/parallax-template/LICENSE" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/templates/parallax-template/background1.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/templates/parallax-template/background2.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/templates/parallax-template/background3.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/templates/parallax-template/css/style.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/templates/parallax-template/index.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/templates/parallax-template/js/init.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/templates/parallax-template/preview.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/templates/starter-template.zip" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/templates/starter-template/LICENSE" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/templates/starter-template/css/style.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/templates/starter-template/index.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/templates/starter-template/js/init.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/templates/starter-template/preview.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/test/html/badges.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/test/html/buttons.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/test/html/cards.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/test/html/carousel.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/test/html/chips.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/test/html/collapsible.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/test/html/dropdown.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/test/html/fixed_navbar.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/test/html/forms.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/test/html/materialbox.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/test/html/multiple_modals.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/test/html/multiple_sidenav.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/test/html/overlayZindex.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/test/html/pushpin.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/test/html/scrollfire.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/test/html/scrollspy.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/test/html/tabs.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/test/html/waves.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/tests/spec/autocomplete/autocompleteFixture.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/tests/spec/autocomplete/autocompleteSpec.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/tests/spec/cards/cardsFixture.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/tests/spec/cards/cardsSpec.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/tests/spec/carousel/carouselFixture.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/tests/spec/carousel/carouselSpec.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/tests/spec/chips/chipsFixture.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/tests/spec/chips/chipsSpec.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/tests/spec/collapsible/collapsible.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/tests/spec/collapsible/collapsibleSpec.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/tests/spec/dropdown/dropdownFixture.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/tests/spec/dropdown/dropdownSpec.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/tests/spec/fab/fabFixture.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/tests/spec/fab/fabSpec.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/tests/spec/helper.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/tests/spec/materialbox/materialboxFixture.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/tests/spec/materialbox/materialboxSpec.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/tests/spec/modal/modalFixture.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/tests/spec/modal/modalSpec.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/tests/spec/select/selectFixture.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/tests/spec/select/selectSpec.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/tests/spec/sidenav/sidenavFixture.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/tests/spec/sidenav/sidenavSpec.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/tests/spec/tabs/tabsFixture.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/tests/spec/tabs/tabsSpec.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/tests/spec/toast/toastSpec.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/tests/spec/tooltip/tooltipFixture.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/tests/spec/tooltip/tooltipSpec.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/v1-changelog.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/materialize-css/v1-upgrade-guide.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/vuejs/djangovue.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html" afterPath="$PROJECT_DIR$/templates/base.html" />
+      <change beforePath="$PROJECT_DIR$/templates/weather/weather.html" afterPath="$PROJECT_DIR$/templates/weather/weather.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -27,7 +521,7 @@
       <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/proj_django/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
+            <state relative-caret-position="381">
               <caret line="140" column="0" lean-forward="false" selection-start-line="140" selection-start-column="0" selection-end-line="140" selection-end-column="0" />
               <folding />
             </state>
@@ -44,7 +538,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/weather/views.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="252">
@@ -60,7 +554,7 @@
         <entry file="file://$PROJECT_DIR$/../../test/weather.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="84">
-              <caret line="3" column="47" lean-forward="true" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="47" />
+              <caret line="3" column="47" lean-forward="false" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="47" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
               </folding>
@@ -68,21 +562,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="base.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="392">
-              <caret line="14" column="87" lean-forward="false" selection-start-line="14" selection-start-column="87" selection-end-line="14" selection-end-column="87" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="weather.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/weather/weather.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="392">
-              <caret line="17" column="12" lean-forward="true" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
+            <state relative-caret-position="532">
+              <caret line="19" column="6" lean-forward="true" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -118,10 +602,10 @@
         <option value="$PROJECT_DIR$/weather/urls.py" />
         <option value="$PROJECT_DIR$/proj_django/settings.py" />
         <option value="$PROJECT_DIR$/static/javascript/weather/weather.js" />
-        <option value="$PROJECT_DIR$/templates/base.html" />
-        <option value="$PROJECT_DIR$/templates/weather/weather.html" />
         <option value="$PROJECT_DIR$/../../test/weather.py" />
         <option value="$PROJECT_DIR$/weather/views.py" />
+        <option value="$PROJECT_DIR$/templates/base.html" />
+        <option value="$PROJECT_DIR$/templates/weather/weather.html" />
       </list>
     </option>
   </component>
@@ -170,19 +654,6 @@
               <item name="proj_django" type="b2602c69:ProjectViewProjectNode" />
               <item name="proj_django" type="462c0819:PsiDirectoryNode" />
               <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="proj_django" type="b2602c69:ProjectViewProjectNode" />
-              <item name="proj_django" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="javascript" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="proj_django" type="b2602c69:ProjectViewProjectNode" />
-              <item name="proj_django" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="javascript" type="462c0819:PsiDirectoryNode" />
-              <item name="weather" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="proj_django" type="b2602c69:ProjectViewProjectNode" />
@@ -522,14 +993,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/weather/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../../../Django/QSF_DataWeb/QSF_DataWeb/settings.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
@@ -558,14 +1021,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/proj_django/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="140" column="0" lean-forward="false" selection-start-line="140" selection-start-column="0" selection-end-line="140" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../../../Django/Bloger/templates/Future/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="28">
@@ -587,14 +1042,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="14" column="87" lean-forward="false" selection-start-line="14" selection-start-column="87" selection-end-line="14" selection-end-column="87" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/weather/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="280">
@@ -611,24 +1058,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/weather/weather.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="17" column="12" lean-forward="true" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../test/weather.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="3" column="47" lean-forward="true" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="47" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/weather/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
@@ -636,6 +1065,48 @@
           <folding>
             <element signature="e#0#35#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/weather/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/proj_django/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="381">
+          <caret line="140" column="0" lean-forward="false" selection-start-line="140" selection-start-column="0" selection-end-line="140" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../test/weather.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="3" column="47" lean-forward="false" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="47" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/weather/weather.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="47" column="0" lean-forward="true" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="532">
+          <caret line="19" column="6" lean-forward="true" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="6" />
+          <folding />
         </state>
       </provider>
     </entry>
