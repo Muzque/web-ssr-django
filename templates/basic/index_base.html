@@ -1,0 +1,30 @@
+{% include 'base.html' %}
+
+{% block content %}
+    <div class="ui borderless container">
+        <div class="ui fixed borderless vertical inverted segment">
+            <div class="ui borderless fixed inverted menu" id="toolbar">
+                {% if request.user.is_superuser %}
+                    <span style="color: white;font-size: 24px" class="ui item" id="{{ request.user.id }}">Hello Superuser:</span>
+                {% else %}
+                    <span style="color: white;font-size: 24px" class="ui item" id="{{ request.user.id }}">Hello User:</span>
+                {% endif %}
+                    <span style="color: white; font-size: 24px" class="ui item" id="{{ request.user.id }}">{{ request.user.username }}</span>
+                <div class="ui right borderless secondary large menu">
+                    <a class="item" href="/">
+                        <div class="ui huge blue horizontal label">Home</div>
+                    </a>
+                    <a class="item" href="/logout">
+                        <div class="ui huge teal horizontal label">Logout</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="ui divider"></div>
+    <div class="ui divider"></div>
+    {% block detail %}
+    {% endblock %}
+    {% block js %}
+    {% endblock %}
+{% endblock %}

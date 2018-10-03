@@ -1,0 +1,47 @@
+{% include 'basic/index_base.html' %}
+{% load staticfiles %}
+
+{% block title %}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.5.0/velocity.js"></script>
+    <style type="text/css">
+        body{
+          background-color:#1d1d1d;
+          overflow: hidden;
+        }
+        #content{
+          perspective:1000px;
+        }
+    </style>
+    <title>Homepage</title>
+{% endblock %}
+
+{% block content %}
+    <div id="content" style="position:relative;height: auto; max-width:100%">
+        <div class="ui grid container">
+            <div class="ui five wide column"></div>
+            <div class="ui six wide column">
+                <div class="ui segments">
+                    <div class="ui massive vertical inverted labeled icon menu">
+                        <a class="item" href="/weather">
+                            <i class="huge sun middle aligned icon"></i>
+                            <div class="middle aligned content" style="font-size: 24px">
+                                天氣預報
+                            </div>
+                        </a>
+                        <a class="item" href="/youtube">
+                            <i class="huge youtube alternate middle aligned icon"></i>
+                            <div class="middle aligned content" style="font-size: 24px">
+                                Youtube
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="ui five wide column"></div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block js %}
+    <script src="{% static 'js/basic/index.js' %}"></script>
+{% endblock %}

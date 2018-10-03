@@ -13,3 +13,7 @@ class Member(APIView):
     def get(self, request, format=None):
         member = Member.objects.all()
         return Response(member)
+
+
+def index(request):
+    return render(request, "basic/index.html", locals())

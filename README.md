@@ -1,1 +1,5 @@
-"# django-youtube" 
+# django project
+---
+* weather (openweathermap API)
+* youtube 
+
