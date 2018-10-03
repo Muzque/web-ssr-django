@@ -95,3 +95,6 @@ ENV/
 
 # config
 *.cfg
+
+# Shell Script
+*.sh

@@ -1,12 +1,44 @@
 from django.shortcuts import render
 from rest_framework.views import APIView
 from rest_framework.response import Response
-from rest_framework import authentication, permissions
+from rest_framework.authentication import TokenAuthentication
+from rest_framework.authentication import BasicAuthentication
+from rest_framework.authentication import SessionAuthentication
+from rest_framework.permissions import IsAdminUser
 from configparser import ConfigParser
+import requests
+import datetime
 
 
 class Weather(APIView):
+    authentication_classes = (BasicAuthentication, SessionAuthentication)
+    permission_classes = (IsAdminUser,)
+
+    def __init__(self, *args, **kwargs):
+        super(Weather, self).__init__(*args, **kwargs)
+        self.cfg = ConfigParser()
+        self.cfg.read('envs.cfg')
 
     def get(self, request, format=None):
-        cfg = ConfigParser().read('envs.cfg')['weather']
-        url = 'http://api.openweathermap.org/data/2.5/forecast?id=524901&APPID={}'.format(cfg['APIkey'])
+        city = request.GET.get('city')
+        key = self.cfg.get('weather', 'APIkey')
+        url = 'http://api.openweathermap.org/data/2.5/forecast'
+        if city is not None:
+            url = url + '?q={}&units=metric'.format(city)
+        url = url + '&APPID={}'.format(key)
+        res = requests.get(url).json()
+        ls_res = res['list']
+        data = list()
+        for line in ls_res:
+            data.append({
+                'datetime': datetime.datetime.fromtimestamp(int(line['dt'])),
+                'weather': line['weather'][0]['description'],
+                'temp': line['main']['temp'],
+                'pressure': line['main']['pressure'],
+                'humidity': line['main']['humidity']
+            })
+        return Response(data=data)
+
+
+def show_weather(request):
+    return render(request, "weather/weather.html", locals())

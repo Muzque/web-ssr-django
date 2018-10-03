@@ -1,0 +1,51 @@
+{% include 'weather/index.html' %}
+{% load staticfiles %}
+
+{% block title %}
+{% endblock %}
+
+{% block content %}
+    <style>
+        .table thead,
+        .table th {
+            text-align: center;
+        }
+    </style>
+    <div class="ui basic horizontal segments">
+        <div class="ui middle aligned grid">
+            <div class="two wide column"></div>
+            <div class="fourteen wide column">
+                <div class="ui segment">
+                    <div class="ui container">
+                        <div class="ui action input">
+                            <button class="ui red labeled icon button" name="search">
+                            <i class="search icon"></i>City
+                            </button>
+                        <input type="text">
+                        </div>
+                    </div>
+                </div>
+                <div class="ui segment">
+                    <div id="">
+                        <table id="result" class="ui celled table">
+                            <thead>
+                                <tr>
+                                    <th>datetime</th>
+                                    <th>weather</th>
+                                    <th>temp</th>
+                                    <th>pressure</th>
+                                    <th>humidity</th>
+                                </tr>
+                            </thead>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="two wide column"></div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block js %}
+    <script src="{% static 'javascript/weather/weather.js'%}"></script>
+{% endblock %}
