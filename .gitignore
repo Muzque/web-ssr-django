@@ -91,4 +91,7 @@ ENV/
 .idea/
 
 # Database
-.sqlite3
+db.sqlite3
+
+# config
+envs.cfg

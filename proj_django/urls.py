@@ -21,7 +21,9 @@ from rest_framework.routers import DefaultRouter
 # router = DefaultRouter()
 # router.register(r'member', basic_view.MemberViewSet)
 
-urlpatterns = [ 
+urlpatterns = [
     path('admin/', admin.site.urls),
     url(r'^api/basic/', include('basic.urls', namespace='basic')),
+    url(r'^api/youtube/', include('youtube.urls', namespace='youtube')),
+    url(r'^api/weather/', include('weather.urls', namespace='weather')),
 ]
