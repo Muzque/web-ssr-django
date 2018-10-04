@@ -11,8 +11,8 @@ import datetime
 
 
 class Weather(APIView):
-    authentication_classes = (BasicAuthentication, SessionAuthentication)
-    permission_classes = (IsAdminUser,)
+    authentication_classes = [] #(BasicAuthentication, SessionAuthentication)
+    permission_classes = [] #(IsAdminUser,)
 
     def __init__(self, *args, **kwargs):
         super(Weather, self).__init__(*args, **kwargs)
