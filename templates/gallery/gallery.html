@@ -1,0 +1,59 @@
+{% include 'gallery/index.html' %}
+{% load staticfiles %}
+
+{% block title %}
+{% endblock %}
+
+{% block detail %}
+    <div class="ui basic horizontal segments">
+        <div class="ui grid container">
+            <div class="ui one wide column"></div>
+            <div class="ui fourteen wide column">
+                <div id="app">
+                    <div class="ui segment">
+                        <div class="ui container">
+                            <div class="ui action input">
+                                <button class="ui blue labeled icon button" name="search" @click="getGallery">
+                                <i class="search icon"></i>Page
+                                </button>
+                            <input type="text" id="query">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ui segment">
+                        <div class="ui vertical segment">
+                            <div class="ui grey container segment">
+                                <div class="ui three column grid">
+                                    <div class="column" v-for="line in gallery">
+                                        <div class="ui fluid card">
+                                            <div class="content">
+                                                <img class="ui avatar image" v-bind:src="line.profile_image">
+                                                <span>[[ line.author ]]</span>
+                                            </div>
+                                            <div class="image">
+                                                <img class="ui medium image" v-bind:src="line.img" style="height:200px;object-fit: cover">
+                                            </div>
+                                            <div class="content">
+                                                <span class="right floated">
+                                                    <i class="heart outline like icon"></i>
+                                                    [[ line.likes ]] likes
+                                                </span>
+                                                <i class="icon globe"></i>
+                                                [[ line.location ]]
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ui one wide column"></div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block js %}
+    <script src="{% static 'js/gallery/gallery.js'%}"></script>
+{% endblock %}

@@ -41,6 +41,8 @@ INSTALLED_APPS = [
     'basic',
     'youtube',
     'weather',
+    'news',
+    'gallery',
 ]
 
 MIDDLEWARE = [

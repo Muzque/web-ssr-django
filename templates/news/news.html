@@ -19,7 +19,7 @@
                     <div class="ui segment">
                         <div class="ui container">
                             <div class="ui action input">
-                                <button class="ui red labeled icon button" name="search" @click="getNews">
+                                <button class="ui blue labeled icon button" name="search" @click="getNews">
                                 <i class="search icon"></i>Keyword
                                 </button>
                             <input type="text" id="query">
@@ -43,13 +43,12 @@
                                             <span>
                                                 <i class="calendar alternate outline icon"></i>[[ line.publishedAt ]]
                                             </span>
-
                                         </div>
                                         <div class="ui divider"></div>
                                         <p class="ui text " style="font-size: 16px">
                                             [[ line.content ]]
                                         </p>
-                                        <a v-bind:src="line.link">
+                                        <a v-bind:href="line.link">
                                             <button type="button" name="button1" class="ui inverted blue button">Read more</button>
                                         </a>
                                     </div>

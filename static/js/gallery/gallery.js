@@ -4,22 +4,22 @@ const vm = new Vue({
     delimiters: ['[[', ']]'],
     el : '#app',
     data : {
-        news : []
+        gallery : []
     },
     methods : {
-        getNews : function() {
+        getGallery : function() {
             var self = this;
-            var search = document.getElementById("query").value;
-            var endpoint = '/news/api/';
+            var page = document.getElementById("query").value;
+            var endpoint = '/gallery/api/';
             $.ajax({
                 method: "GET",
                 url: endpoint,
                 data: {
-                    search: search
+                    page: page
                 },
                 success: function (data) {
-                    // console.log(data);
-                    self.news = data;
+                    console.log(data);
+                    self.gallery = data;
                 },
                 error: function (error_data) {
                     alert("失敗");
