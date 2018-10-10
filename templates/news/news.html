@@ -1,0 +1,72 @@
+{% include 'news/index.html' %}
+{% load staticfiles %}
+
+{% block title %}
+    <style>
+        .table thead,
+        .table th {
+            text-align: center;
+        }
+    </style>
+{% endblock %}
+
+{% block content %}
+    <div class="ui basic horizontal segments">
+        <div class="ui middle aligned grid">
+            <div class="two wide column"></div>
+            <div class="fourteen wide column">
+                <div id="app">
+                    <div class="ui segment">
+                        <div class="ui container">
+                            <div class="ui action input">
+                                <button class="ui red labeled icon button" name="search" @click="getNews">
+                                <i class="search icon"></i>Keyword
+                                </button>
+                            <input type="text" id="query">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ui segment">
+                        <div class="ui vertical segment">
+                            <div class="ui grey container segment" v-for="line in news">
+                                <div class="ui grid">
+                                    <div class="six wide column">
+                                        <div class="ui image">
+                                            <img v-bind:src="line.img" alt="" style="width:300px;height:240px;">
+                                        </div>
+                                    </div>
+
+                                    <div class="ten wide column">
+                                        <h1 class="ui header">[[ line.title ]]</h1>
+                                        <div class="">
+                                            <span><i class="coffee icon"></i>[[ line.author ]]</span>
+                                            <span>
+                                                <i class="calendar alternate outline icon"></i>[[ line.publishedAt ]]
+                                            </span>
+
+                                        </div>
+                                        <div class="ui divider"></div>
+                                        <p class="ui text " style="font-size: 16px">
+                                            [[ line.content ]]
+                                        </p>
+                                        <a v-bind:src="line.link">
+                                            <button type="button" name="button1" class="ui inverted blue button">Read more</button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="two wide column"></div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block js %}
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/vue@2.5.13/dist/vue.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="{% static 'js/news/news.js'%}"></script>
+{% endblock %}

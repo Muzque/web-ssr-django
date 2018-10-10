@@ -27,4 +27,5 @@ urlpatterns = [
     url(r'^', include('basic.urls', namespace='basic')),
     url(r'^youtube/', include('youtube.urls', namespace='youtube')),
     url(r'^weather/', include('weather.urls', namespace='weather')),
+    url(r'^news/', include('news.urls', namespace='news')),
 ]
