@@ -21,11 +21,11 @@ class Weather(APIView):
 
     def get(self, request, format=None):
         city = request.GET.get('city').lower()
-        key = self.cfg.get('weather', 'APIkey')
+        key = self.cfg.get('OpenWeatherMap', 'APIkey')
         url = 'http://api.openweathermap.org/data/2.5/forecast'
         if city is not None:
             if city == 'here':
-                gkey = self.cfg.get('googlemap', 'APIkey')
+                gkey = self.cfg.get('Google_Geolocation', 'APIkey')
                 gurl = 'https://www.googleapis.com/geolocation/v1/geolocate?key='
                 res = requests.post(gurl+gkey).json()
                 lat = res['location']['lat']

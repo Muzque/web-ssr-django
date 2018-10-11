@@ -2,7 +2,64 @@
 {% load staticfiles %}
 
 {% block content %}
+    <div class="ui basic horizontal segments">
+        <div class="ui middle aligned grid container">
+            <div class="sixteen wide column">
+                <div id="app">
+                    <div class="ui segment">
+                        <div class="ui container">
+                            <div class="ui action input">
+                                <button class="ui red labeled icon button" name="search" v-on:click="getPlaylist">
+                                    <i class="youtube icon"></i>Youtube Username
+                                </button>
+                            <input type="text" id="query">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ui segment" v-if="videos">
+                        <div class="ui container">
+                            <div>
+                                <button type="button" name="play" class="ui green inverted button">
+                                    <i class="play icon"></i>Play
+                                </button>
+                            </div>
+                            <div class="ui green container segment" v-for="video in videos">
+                                <h4>[[ video.title ]]</h4>
+                                <h4>[[ video.videoId ]]</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ui segment">
+                        <div class="ui vertical segment">
+                            <div class="ui grey container segment" v-for="line in playlist">
+                                <div class="ui grid">
+                                    <div class="six wide column">
+                                        <div class="ui image">
+                                            <img v-bind:src="line.img" alt="" style="width:300px;height:240px;">
+                                        </div>
+                                    </div>
+                                    <div class="ten wide column">
+                                        <h1 class="ui header">[[ line.title ]]</h1>
+                                        <div class="">
+                                            <div>
+                                                <i class="calendar alternate outline icon"></i>[[ line.publishedAt ]]
+                                            </div>
+                                        </div>
+                                        <div class="ui divider"></div>
+                                        <button type="button" name="listen" class="ui red inverted button" v-on:click="getListen" v-bind:id="line.playlistId">
+                                            <i class="hand point right outline icon"></i>Listen
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 {% endblock %}
 
 {% block js %}
+    <script src="{% static 'js/youtube/playlist.js'%}"></script>
 {% endblock %}
