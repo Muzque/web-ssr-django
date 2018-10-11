@@ -56,12 +56,16 @@ class Listen(APIView):
         url = "https://www.googleapis.com/youtube/v3/playlistItems?key={}" \
               "&part=snippet&maxResults=50&playlistId={}".format(key, playlistId)
         res = requests.get(url=url).json()
-        data = list()
+        url_list = "http://www.youtube.com/embed/videoseries?list={}&autoplay=1&enablejsapi=1".format(playlistId)
+        items = list()
         for line in res['items']:
-            data.append({
+            items.append({
                 'title': line['snippet']['title'],
                 'videoId': line['snippet']['resourceId']['videoId']
             })
+        data = dict()
+        data['playlist'] = url_list
+        data['items'] = items
         return Response(data)
 
 

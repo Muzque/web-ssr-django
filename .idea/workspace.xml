@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f7cba0c3-d9f4-4007-a39f-cf69b919c2d8" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/js/youtube/listen.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/js/youtube/playlist.js" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/static/js/youtube/playlist.js" afterPath="$PROJECT_DIR$/static/js/youtube/playlist.js" />
       <change beforePath="$PROJECT_DIR$/templates/youtube/youtube.html" afterPath="$PROJECT_DIR$/templates/youtube/youtube.html" />
-      <change beforePath="$PROJECT_DIR$/weather/views.py" afterPath="$PROJECT_DIR$/weather/views.py" />
-      <change beforePath="$PROJECT_DIR$/youtube/urls.py" afterPath="$PROJECT_DIR$/youtube/urls.py" />
       <change beforePath="$PROJECT_DIR$/youtube/views.py" afterPath="$PROJECT_DIR$/youtube/views.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -41,7 +37,17 @@
         <entry file="file://$PROJECT_DIR$/envs.cfg">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="140">
-              <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+              <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="gallery.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/gallery/gallery.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="439">
+              <caret line="32" column="138" lean-forward="true" selection-start-line="32" selection-start-column="138" selection-end-line="32" selection-end-column="138" />
               <folding />
             </state>
           </provider>
@@ -51,7 +57,7 @@
         <entry file="file://$PROJECT_DIR$/youtube/urls.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="252">
-              <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+              <caret line="9" column="1" lean-forward="false" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
               <folding>
                 <element signature="e#0#32#0" expanded="true" />
               </folding>
@@ -62,7 +68,7 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/youtube/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="331">
+            <state relative-caret-position="280">
               <caret line="55" column="76" lean-forward="true" selection-start-line="55" selection-start-column="76" selection-end-line="55" selection-end-column="76" />
               <folding />
             </state>
@@ -72,8 +78,8 @@
       <file leaf-file-name="youtube.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/youtube/youtube.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="532">
-              <caret line="52" column="38" lean-forward="true" selection-start-line="52" selection-start-column="38" selection-end-line="52" selection-end-column="38" />
+            <state relative-caret-position="261">
+              <caret line="39" column="77" lean-forward="false" selection-start-line="39" selection-start-column="77" selection-end-line="39" selection-end-column="77" />
               <folding />
             </state>
           </provider>
@@ -82,8 +88,8 @@
       <file leaf-file-name="playlist.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/static/js/youtube/playlist.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
-              <caret line="5" column="21" lean-forward="true" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
+            <state relative-caret-position="392">
+              <caret line="17" column="32" lean-forward="true" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -152,8 +158,8 @@
         <option value="$PROJECT_DIR$/envs.cfg" />
         <option value="$PROJECT_DIR$/weather/views.py" />
         <option value="$PROJECT_DIR$/youtube/urls.py" />
-        <option value="$PROJECT_DIR$/youtube/views.py" />
         <option value="$PROJECT_DIR$/static/js/youtube/listen.js" />
+        <option value="$PROJECT_DIR$/youtube/views.py" />
         <option value="$PROJECT_DIR$/static/js/youtube/playlist.js" />
         <option value="$PROJECT_DIR$/templates/youtube/youtube.html" />
       </list>
@@ -198,20 +204,13 @@
             <path>
               <item name="proj_django" type="b2602c69:ProjectViewProjectNode" />
               <item name="proj_django" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="proj_django" type="b2602c69:ProjectViewProjectNode" />
               <item name="proj_django" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="proj_django" type="b2602c69:ProjectViewProjectNode" />
-              <item name="proj_django" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-              <item name="youtube" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="gallery" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="proj_django" type="b2602c69:ProjectViewProjectNode" />
@@ -774,14 +773,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/gallery/gallery.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="701">
-          <caret line="56" column="14" lean-forward="true" selection-start-line="56" selection-start-column="14" selection-end-line="56" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/static/js/youtube/listen.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="504">
@@ -790,27 +781,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/youtube/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/envs.cfg">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="140">
-          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/youtube/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="331">
+        <state relative-caret-position="280">
           <caret line="55" column="76" lean-forward="true" selection-start-line="55" selection-start-column="76" selection-end-line="55" selection-end-column="76" />
           <folding />
         </state>
@@ -818,16 +799,34 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/static/js/youtube/playlist.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="5" column="21" lean-forward="true" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
+        <state relative-caret-position="392">
+          <caret line="17" column="32" lean-forward="true" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/youtube/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="9" column="1" lean-forward="false" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/gallery/gallery.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="439">
+          <caret line="32" column="138" lean-forward="true" selection-start-line="32" selection-start-column="138" selection-end-line="32" selection-end-column="138" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/youtube/youtube.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="532">
-          <caret line="52" column="38" lean-forward="true" selection-start-line="52" selection-start-column="38" selection-end-line="52" selection-end-column="38" />
+        <state relative-caret-position="261">
+          <caret line="39" column="77" lean-forward="false" selection-start-line="39" selection-start-column="77" selection-end-line="39" selection-end-column="77" />
           <folding />
         </state>
       </provider>

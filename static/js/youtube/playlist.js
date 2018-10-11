@@ -3,7 +3,8 @@ const vm = new Vue({
     el : '#app',
     data : {
         playlist : [],
-        videos : null
+        videos : null,
+        playlink: []
     },
     methods : {
         getPlaylist : function() {
@@ -18,6 +19,8 @@ const vm = new Vue({
                 },
                 success: function (data) {
                     // console.log(data);
+                    self.videos = null;
+                    self.playlink = [];
                     self.playlist = data;
                 },
                 error: function (error_data) {
@@ -40,7 +43,10 @@ const vm = new Vue({
                 },
                 success: function (data) {
                     // console.log(data);
-                    self.videos = data;
+                    self.videos = data.items;
+                    self.playlink = data.playlist;
+                    document.body.scrollTop = 0; // For Safari
+                    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
                 },
                 error: function (error_data) {
                     alert("失敗");
