@@ -17,7 +17,7 @@ class Gallery(APIView):
     def __init__(self, *args, **kwargs):
         super(Gallery, self).__init__(*args, **kwargs)
         self.cfg = ConfigParser()
-        self.cfg.read('envs.cfg')
+        self.cfg.read('private/envs.cfg')
 
     def get(self, request, format=None):
         key = self.cfg.get("Unsplash", "APIkey")

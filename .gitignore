@@ -98,3 +98,6 @@ ENV/
 
 # Shell Script
 *.sh
+
+# Private files
+private/
