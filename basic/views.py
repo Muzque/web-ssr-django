@@ -16,4 +16,4 @@ class Member(APIView):
 
 
 def index(request):
-    return render(request, "basic/test.html", locals())
+    return render(request, "basic/index.html", locals())
