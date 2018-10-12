@@ -48,7 +48,7 @@ class Listen(APIView):
     def __init__(self, *args, **kwargs):
         super(Listen, self).__init__(*args, **kwargs)
         self.cfg = ConfigParser()
-        self.cfg.read('envs.cfg')
+        self.cfg.read('private/envs.cfg')
 
     def get(self, request, format=None):
         key = self.cfg.get("Google_Youtube", "APIkey")
