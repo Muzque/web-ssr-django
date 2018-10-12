@@ -2,21 +2,13 @@
 {% load staticfiles %}
 
 {% block title %}
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.5.0/velocity.js"></script>
-    <style type="text/css">
-        body{
-          background-color:#1d1d1d;
-          overflow: hidden;
-        }
-        #content{
-          perspective:1000px;
-        }
-    </style>
     <title>Homepage</title>
 {% endblock %}
 
 {% block content %}
-    <div id="content" style="position:relative;height: auto; max-width:100%">
+    <div id="wrap">
+        <div class="bg"></div>
+        <h1></h1>
         <div class="ui grid container">
             <div class="ui five wide column"></div>
             <div class="ui six wide column">
@@ -55,5 +47,5 @@
 {% endblock %}
 
 {% block js %}
-    <script src="{% static 'js/basic/index.js' %}"></script>
+
 {% endblock %}
