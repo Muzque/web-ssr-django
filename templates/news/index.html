@@ -1,10 +1,22 @@
 {% include 'basic/index_base.html' %}
+{% load staticfiles %}
 
 {% block title %}
     <title>News</title>
 {% endblock %}
 
 {% block content %}
+{% endblock %}
+
+{% block detail %}
+    <div class="ui divider"></div>
+
+    <div class="ui segment container">
+        <h3 class="ui header">Comments</h3>
+        <div class="ui comments">
+
+        </div>
+    </div>
 {% endblock %}
 
 {% block js %}

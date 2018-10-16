@@ -1,0 +1,56 @@
+{% extends 'basic/base.html' %}
+{% load staticfiles %}
+
+{% block title %}
+    <title>Register</title>
+{% endblock %}
+
+{% block content %}
+    <div class="background image" style="height: 100%">
+        <div class="holder">
+            <div class="ui container vertical segment">
+                <div class="ui grid">
+                    <div class="ui six wide column">
+                        <a href="{% url 'basic:index' %}">
+                            <img class="ui fluid image" src="{% static '/images/login_logo.png' %}">
+                        </a>
+                    </div>
+                    <div class="ui ten wide column">
+                        <div class="ui basic segment">
+                            <span class="ui huge left floated header">{{ source }}</span>
+                            {% if source == 'Login' %}
+                                <a class="ui right floated tiny blue inverted button" href="{% url 'basic:register' %}"><i class="undo icon"></i>Register</a>
+                            {% else %}
+                                <a class="ui right floated tiny blue inverted button" href="{% url 'basic:login' %}"><i class="undo icon"></i>Login</a>
+                            {% endif %}
+                        </div>
+                        <div class="ui basic padded segment">
+                            <form class="ui tiny error form" method="POST">
+                                {% if form.errors %}
+                                    <div class="ui error message">
+                                        {{ form.errors }}
+                                    </div>
+                                    {% for field in form %}
+                                        <div class="{{ field.errors|yesno:'error,' }} field">
+                                            {{ field.label }}
+                                            {{ field }}
+                                        </div>
+                                    {% endfor %}
+                                {% else %}
+                                    {% for field in form %}
+                                        <div class="field">
+                                            {{ field.label }}
+                                            {{ field }}
+                                        </div>
+                                    {% endfor %}
+                                {% endif %}
+                                {% csrf_token %}
+                                <button type="submit" class="ui blue button">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
