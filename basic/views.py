@@ -30,7 +30,7 @@ class UserFormView(View):
             if user is not None:
                 if user.is_active:
                     login(request, user)
-                    return redirect(to='index')
+                    return redirect(to='basic:index')
         return render(request, self.template_name, locals())
 
 
@@ -44,12 +44,12 @@ class LoginView(View):
         return render(request, self.template_name, locals())
 
     def post(self, request):
-        form = self.form_class(request.POST)
+        form = self.form_class(request, data=request.POST)
         source = request.get_full_path().strip('/').capitalize()
 
         if form.is_valid():
             login(request, form.get_user())
-            return redirect(to='index')
+            return redirect(to='basic:index')
         return render(request, self.template_name, locals())
 
 

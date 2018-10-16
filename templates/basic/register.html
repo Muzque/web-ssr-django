@@ -2,7 +2,11 @@
 {% load staticfiles %}
 
 {% block title %}
-    <title>Register</title>
+    {% if source == 'Login' %}
+        <title>Login</title>
+    {% else %}
+        <title>Register</title>
+    {% endif %}
 {% endblock %}
 
 {% block content %}
