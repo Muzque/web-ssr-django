@@ -96,8 +96,5 @@ ENV/
 # config
 *.cfg
 
-# Shell Script
-*.sh
-
 # Private files
 private/
