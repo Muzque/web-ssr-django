@@ -1,4 +1,4 @@
-{% include 'youtube/index.html' %}
+{% extends 'youtube/index.html' %}
 {% load staticfiles %}
 
 {% block content %}
@@ -6,7 +6,7 @@
         <div class="ui middle aligned grid container">
             <div class="sixteen wide column">
                 <div id="app">
-                    <div class="ui segment">
+                    <div class="ui basic segment">
                         <div class="ui container">
                             <div class="ui action input">
                                 <button class="ui red labeled icon button" name="search" v-on:click="getPlaylist">
@@ -31,7 +31,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="ui segment">
+                    <div class="ui basic segment">
                         <div class="ui vertical segment">
                             <div class="ui grey container segment">
                                 <div class="ui two column grid">

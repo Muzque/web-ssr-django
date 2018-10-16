@@ -1,4 +1,4 @@
-{% include 'news/index.html' %}
+{% extends 'news/index.html' %}
 {% load staticfiles %}
 
 {% block title %}
@@ -11,11 +11,11 @@
 {% endblock %}
 
 {% block content %}
-    <div class="ui basic horizontal segments">
+    <div class="ui horizontal segments">
         <div class="ui middle aligned grid container">
             <div class="sixteen wide column">
                 <div id="app">
-                    <div class="ui segment">
+                    <div class="ui basic segment">
                         <div class="ui container">
                             <div class="ui action input">
                                 <button class="ui blue labeled icon button" name="search" @click="getNews">

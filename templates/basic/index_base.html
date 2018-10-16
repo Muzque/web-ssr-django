@@ -1,34 +1,44 @@
 {% include 'basic/base.html' %}
+{% load staticfiles %}
 
 {% block content %}
-    <div class="ui borderless container">
-        <div class="ui fixed borderless vertical inverted segment">
+    <div class="ui container">
+        <div class="ui fixed basic vertical inverted segment">
             <div class="ui borderless fixed inverted menu" id="toolbar">
-                {% if request.user.is_superuser %}
-                    <span style="color: white;font-size: 24px" class="ui item" id="{{ request.user.id }}">Hello Superuser:</span>
-                {% elif request.user.is_active %}
-                    <span style="color: white;font-size: 24px" class="ui item" id="{{ request.user.id }}">Hello User:</span>
-                {% endif %}
-                    <span style="color: white; font-size: 24px" class="ui item" id="{{ request.user.id }}">{{ request.user.username }}</span>
-                <div class="ui right borderless secondary large menu">
-                    <a class="item" href="{% url 'basic:index' %}">
-                        <div class="ui huge blue horizontal label">Home</div>
-                    </a>
-                    {% if request.user.is_acitve %}
-                        <a class="item" href="{% url 'basic:logout' %}">
-                            <div class="ui huge teal horizontal label">Logout</div>
+                <a class="item" href="{% url 'basic:index' %}">
+                    <i style="margin-right: 2px" class="rocket icon"></i>Home
+                </a>
+                <a class="item" href="{% url 'weather:index' %}">
+                    <i style="margin-right: 2px" class="sun middle aligned icon"></i>天氣預報
+                </a>
+                <a class="item" href="{% url 'news:index' %}">
+                    <i style="margin-right: 2px" class="clipboard outline alternate middle aligned icon"></i>新聞搜尋
+                </a>
+                <a class="item" href="{% url 'gallery:index' %}">
+                    <i style="margin-right: 2px" class="camera alternate middle aligned icon"></i>照片集
+                </a>
+                <a class="item" href="{% url 'youtube:index' %}">
+                    <i style="margin-right: 2px" class="youtube alternate middle aligned icon"></i>Youtube播放清單
+                </a>
+                <div class="ui right borderless secondary menu">
+                    {% if request.user.is_authenticated %}
+                        <a class="item" style="margin-bottom: 0px">
+                            <img class="ui avatar image" src="{% static '/images/user.png'%}" alt="">
+                            <span style="margin-left:10px">{{ request.user.username }}</span>
                         </a>
+                        <a class="ui item" href="{% url 'basic:logout' %}">Logout</a>
                     {% else %}
-                        <a class="item" href="{% url 'basic:login' %}">
-                            <div class="ui huge teal horizontal label">Login</div>
+                        <a class="ui disabled item" style="margin-bottom: 0px">
+                            <div>Anonymous</div>
+                        </a>
+                        <a class="ui item" href="{% url 'basic:login' %}">
+                            <div>SignUp/Login</div>
                         </a>
                     {% endif %}
                 </div>
             </div>
         </div>
     </div>
-    <div class="ui divider"></div>
-    <div class="ui divider"></div>
     {% block detail %}
     {% endblock %}
     {% block js %}

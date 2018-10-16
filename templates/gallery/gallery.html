@@ -1,18 +1,18 @@
-{% include 'gallery/index.html' %}
+{% extends 'gallery/index.html' %}
 {% load staticfiles %}
 
 {% block title %}
 {% endblock %}
 
-{% block detail %}
+{% block content %}
     <div class="ui basic horizontal segments">
         <div class="ui grid container">
             <div class="ui sixteen wide column">
                 <div id="app">
-                    <div class="ui segment">
-                        <div class="ui container">
+                    <div class="ui basic segment">
+                        <div class="ui basic container">
                             <div class="ui action input">
-                                <button class="ui blue labeled icon button" name="search" @click="getGallery">
+                                <button class="ui orange labeled icon button" name="search" @click="getGallery">
                                 <i class="search icon"></i>Page
                                 </button>
                             <input type="text" id="query">
@@ -22,8 +22,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="ui segment">
-                        <div class="ui vertical segment">
+                    <div class="ui basic segment">
+                        <div class="ui vertical basic segment">
                             <div class="ui grey container segment">
                                 <div class="ui three column grid">
                                     <div class="column" v-for="line in gallery">

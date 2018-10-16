@@ -1,4 +1,4 @@
-{% include 'weather/index.html' %}
+{% extends 'weather/index.html' %}
 {% load staticfiles %}
 
 {% block title %}
@@ -14,7 +14,7 @@
     <div class="ui basic horizontal segments">
         <div class="ui middle aligned grid container">
             <div class="sixteen wide column">
-                <div class="ui segment">
+                <div class="ui basic segment">
                     <div class="ui container">
                         <div class="ui action input">
                             <button class="ui red labeled icon button" name="search">
