@@ -2,6 +2,8 @@ from django.shortcuts import render, redirect
 from django.contrib.auth import authenticate, login, logout
 from django.views.generic import View
 from django.contrib.auth.forms import AuthenticationForm
+from social_core.backends.oauth import BaseOAuth2
+from urllib.parse import urlencode
 from .forms import UserForm
 
 
@@ -56,6 +58,31 @@ class LoginView(View):
 def logout_view(request):
     logout(request)
     return redirect(to='basic:index')
+
+
+class FacebookOAuth2(BaseOAuth2):
+    """GitHub OAuth authentication backend"""
+    name = 'facebook'
+    AUTHORIZATION_URL = 'https://facebook.com/login/oauth/authorize'
+    ACCESS_TOKEN_URL = 'https://facebook.com/login/oauth/access_token'
+    SCOPE_SEPARATOR = ','
+    EXTRA_DATA = [
+        ('id', 'id'),
+        ('expires', 'expires')
+    ]
+
+    def get_user_details(self, response):
+        """Return user details from GitHub account"""
+        return {'username': response.get('login'),
+                'email': response.get('email') or '',
+                'first_name': response.get('name')}
+
+    def user_data(self, access_token, *args, **kwargs):
+        """Loads user data from service"""
+        url = 'https://api.facebook.com/user?' + urlencode({
+            'access_token': access_token
+        })
+        return self.get_json(url)
 
 
 def index(request):
