@@ -158,7 +158,8 @@ SOCIAL_AUTH_FACEBOOK_SECRET = cfg.get('Facebook', 'SECRET')
 # Define SOCIAL_AUTH_FACEBOOK_SCOPE to get extra permissions from facebook:
 SOCIAL_AUTH_FACEBOOK_SCOPE = ['email']
 SOCIAL_AUTH_FACEBOOK_PROFILE_EXTRA_PARAMS = {
-    'fields': 'id, name, email'
+    'locale': 'zh_TW',
+    'fields': 'id, name, email, age_range'
 }
 
 # Internationalization

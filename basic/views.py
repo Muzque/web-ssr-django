@@ -60,6 +60,10 @@ def logout_view(request):
     return redirect(to='basic:index')
 
 
+def privacy(request):
+    return render(request, "basic/PrivacyPolite.html", locals())
+
+
 class FacebookOAuth2(BaseOAuth2):
     """GitHub OAuth authentication backend"""
     name = 'facebook'

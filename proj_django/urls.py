@@ -25,6 +25,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     url(r'^api-auth/', include('rest_framework.urls')),
     url(r'^oauth/', include('rest_framework_social_oauth2.urls'), name='social'),
+    # apps
     url(r'^', include('basic.urls', namespace='basic')),
     url(r'^youtube/', include('youtube.urls', namespace='youtube')),
     url(r'^weather/', include('weather.urls', namespace='weather')),
