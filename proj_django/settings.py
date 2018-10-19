@@ -101,7 +101,8 @@ DATABASES = {
         'NAME': cfg.get('MySQL', 'MYSQL_DATABASE'),
         'USER': cfg.get('MySQL', 'MYSQL_USER'),
         'PASSWORD': cfg.get('MySQL', 'MYSQL_PASSWORD'),
-        'HOST': cfg.get('website', 'ip'),
+        'HOST': cfg.get('MySQL', 'HOST'),
+        'PORT': cfg.get('MySQL', 'MYSQL_PORT'),
     }
 }
 
