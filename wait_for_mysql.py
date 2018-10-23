@@ -6,7 +6,7 @@ from configparser import ConfigParser
 cfg = ConfigParser()
 cfg.read("private/oauth.cfg")
 
-host = "127.0.0.1"
+host = cfg.get('MySQL', 'MYSQL_HOST')
 user = cfg.get('MySQL', 'MYSQL_ROOT')
 password = cfg.get('MySQL', 'MYSQL_ROOT_PASSWORD')
 port = int(cfg.get('MySQL', 'MYSQL_PORT'))
