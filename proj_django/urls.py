@@ -31,4 +31,5 @@ urlpatterns = [
     url(r'^weather/', include('weather.urls', namespace='weather')),
     url(r'^news/', include('news.urls', namespace='news')),
     url(r'^gallery/', include('gallery.urls', namespace='gallery')),
+    url(r'^recommend/', include('recommend.urls', namespace='recommend')),
 ]

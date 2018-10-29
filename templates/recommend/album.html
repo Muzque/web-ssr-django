@@ -1,0 +1,26 @@
+{% extends 'recommend/index.html' %}
+{% load staticfiles %}
+
+{% block content %}
+    <div class="ui basic horizontal segments">
+        <div class="ui middle aligned grid container">
+            <div class="sixteen wide column">
+                <div id="app">
+                    <ul>
+                        {% for album in object_list %}
+                            <li>
+                                <a href="{% url 'album:detail' album.id %}">
+                                    {{ album.album_title }}
+                                </a>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block js %}
+    <script src="{% static 'js/recommend/album.js'%}"></script>
+{% endblock %}
