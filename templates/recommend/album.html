@@ -6,15 +6,13 @@
         <div class="ui middle aligned grid container">
             <div class="sixteen wide column">
                 <div id="app">
-                    <ul>
-                        {% for album in object_list %}
-                            <li>
-                                <a href="{% url 'album:detail' album.id %}">
-                                    {{ album.album_title }}
-                                </a>
-                            </li>
-                        {% endfor %}
-                    </ul>
+                    <div class="ui basic segment">
+                        <div class="ui vertical segment">
+                            <div class="ui grey container segment" v-for="line in album">
+                                [[ album.title ]]
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

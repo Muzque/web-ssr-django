@@ -20,3 +20,6 @@ class AlbumView(APIView):
 #     model = Album
 #     template_name = 'recommend/detail.html'
 
+
+def show_album(request, *args, **kwargs):
+    return render(request, "recommend/album.html", locals())
