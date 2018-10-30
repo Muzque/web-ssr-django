@@ -20,10 +20,13 @@ lib64/
 parts/
 sdist/
 var/
-migrations/
 *.egg-info/
 .installed.cfg
 *.egg
+
+# Migrate
+migrations/*
+!migrations/__init__.py
 
 # PyInstaller
 #  Usually these files are written by a python script from a template
