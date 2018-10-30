@@ -162,7 +162,7 @@ LOGGING = {
 CACHES = {
     "default": {
         "BACKEND": "django_redis.cache.RedisCache",
-        "LOCATION": "redis://{}:6379/0".format("website", "pvt_ip"),
+        "LOCATION": "redis://{}:6379/0".format("website", "ip"),
         "OPTIONS": {
             "CLIENT_CLASS": "django_redis.client.DefaultClient",
         }
