@@ -26,7 +26,7 @@ var/
 
 # Migrate
 migrations/*
-!migrations/__init__.py
+!migrations/.gitkeep
 
 # PyInstaller
 #  Usually these files are written by a python script from a template
