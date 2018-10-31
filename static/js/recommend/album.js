@@ -4,7 +4,7 @@ const vm = new Vue({
     delimiters: ['[[', ']]'],
     el : '#app',
     data : {
-        album : []
+        albums : []
     },
     methods : {
         init: function(){
@@ -14,7 +14,7 @@ const vm = new Vue({
             var endpoint = '/recommend/api/';
             this.$http.get(endpoint)
             .success(function(data){
-                this.$set('album', data);
+                this.$set('albums', data);
             })
         }
     }
