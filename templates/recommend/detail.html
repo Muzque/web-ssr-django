@@ -1,0 +1,26 @@
+{% extends 'recommend/index.html' %}
+{% load staticfiles %}
+
+{% block content %}
+    <div class="ui basic horizontal segments">
+        <div class="ui middle aligned grid container">
+            <div class="sixteen wide column">
+                <div id="app">
+                    <div class="ui basic segment">
+                        <div class="ui vertical segment">
+                            <div class="ui basic container segment">
+                                <ul v-for="song in songs">
+                                    <li>[[ song.song_title ]]</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block js %}
+    <script src="{% static 'js/recommend/detail.js'%}"></script>
+{% endblock %}

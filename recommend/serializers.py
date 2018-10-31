@@ -7,5 +7,12 @@ class AlbumSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Album
-        field = ('title', 'logo', 'likes', 'watched', 'created_by')
+        fields = ('id', 'title', 'logo', 'likes', 'watched', 'created_by')
+
+
+class SongSerializer(serializers.ModelSerializer):
+
+    class Meta:
+        model = Song
+        fields = ('album', 'video_id', 'song_title')
 

@@ -6,16 +6,11 @@ const vm = new Vue({
     data : {
         albums : []
     },
-    methods : {
-        init: function(){
-            this.getItems();
-            },
-        getItems: function(){
-            var endpoint = '/recommend/api/';
-            this.$http.get(endpoint)
-            .success(function(data){
-                this.$set('albums', data);
-            })
-        }
+    mounted() {
+        var self = this;
+        var endpoint = '/recommend/api/album/';
+        $.getJSON(endpoint, function(data) {
+            self.albums = data;
+        })
     }
 });
