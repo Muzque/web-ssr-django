@@ -13,9 +13,9 @@ class Album(models.Model):
 
 
 class Song(models.Model):
+    video_id = models.CharField(null=False, max_length=20, primary_key=True)
+    song_title = models.CharField(null=True, max_length=100)
     album = models.ForeignKey(Album, on_delete=models.CASCADE)
-    video_id = models.CharField(null=False, max_length=20)
-    song_title = models.CharField(null=True, max_length=64)
 
     def __str__(self):
         return self.song_title
