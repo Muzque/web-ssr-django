@@ -13,7 +13,7 @@ class Album(models.Model):
 
 
 class Song(models.Model):
-    video_id = models.CharField(null=False, max_length=20, primary_key=True)
+    video_id = models.CharField(null=False, max_length=20, unique=True)
     song_title = models.CharField(null=True, max_length=100)
     album = models.ForeignKey(Album, on_delete=models.CASCADE)
 
