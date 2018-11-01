@@ -15,13 +15,11 @@ class AlbumView(APIView):
     def get(self, request):
         if self.request.version == '1.0':
             if 'albums' in cache:
-                # from cache get musics
                 albums = cache.get('albums')
             else:
                 albums = Album.objects.all()
                 serializer = AlbumSerializer(albums, many=True)
                 albums = serializer.data
-                # store data to cache
                 cache.set('albums', albums, timeout=None)
         else:
             albums = Album.objects.all()
@@ -29,11 +27,81 @@ class AlbumView(APIView):
             albums = serializer.data
         return Response(albums, status=status.HTTP_200_OK)
 
-    def post(self):
-        pass
+    def post(self, request):
+        serializer = AlbumSerializer(data=request.data)
+        if serializer.is_valid():
+            serializer.save()
+            return Response(serializer.data, status=status.HTTP_201_CREATED)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
 
-class DetailView(APIView):
+class AlbumDetail(APIView):
+    """
+    Retrieve, update or delete a snippet instance.
+    """
+    def get_object(self, pk):
+        try:
+            return Album.objects.get(pk=pk)
+        except Album.DoesNotExist:
+            raise Http404
+
+    def get(self, request, pk, format=None):
+        album = self.get_object(pk)
+        serializer = AlbumSerializer(album)
+        return Response(serializer.data)
+
+    def put(self, request, pk, format=None):
+        album = self.get_object(pk)
+        serializer = AlbumSerializer(album, data=request.data)
+        if serializer.is_valid():
+            serializer.save()
+            return Response(serializer.data)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+    def delete(self, request, pk, format=None):
+        album = self.get_object(pk)
+        album.delete()
+        return Response(status=status.HTTP_204_NO_CONTENT)
+
+
+class SongView(APIView):
+
+    def get(self, request):
+        songs = Song.objects.all()
+        serializer = SongSerializer(songs, many=True)
+        return Response(serializer.data, status=status.HTTP_200_OK)
+
+
+class SongDetail(APIView):
+    """
+    Retrieve, update or delete a snippet instance.
+    """
+    def get_object(self, pk):
+        try:
+            return Song.objects.get(pk=pk)
+        except Song.DoesNotExist:
+            raise Http404
+
+    def get(self, request, pk, format=None):
+        song = self.get_object(pk)
+        serializer = SongSerializer(song)
+        return Response(serializer.data)
+
+    def put(self, request, pk, format=None):
+        song = self.get_object(pk)
+        serializer = SongSerializer(song, data=request.data)
+        if serializer.is_valid():
+            serializer.save()
+            return Response(serializer.data)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+    def delete(self, request, pk, format=None):
+        song = self.get_object(pk)
+        song.delete()
+        return Response(status=status.HTTP_204_NO_CONTENT)
+
+
+class AlbumFilter(APIView):
 
     def get_object(self, pk):
         try:
@@ -45,9 +113,6 @@ class DetailView(APIView):
         songs = self.get_object(pk)
         serializer = SongSerializer(songs, many=True)
         return Response(serializer.data, status=status.HTTP_200_OK)
-
-    def post(self, request):
-        pass
 
 
 def show_album(request, *args, **kwargs):

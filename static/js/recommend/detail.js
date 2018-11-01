@@ -11,7 +11,7 @@ const vm = new Vue({
         var url = new URL(window.location.href);
         var pk = url.searchParams.get("pk");
         console.log(pk);
-        var endpoint = '/recommend/api/songs/' + pk;
+        var endpoint = '/recommend/api/album/filter/' + pk;
         $.getJSON(endpoint, function(data) {
             self.songs = data;
         })
