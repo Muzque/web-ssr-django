@@ -20,3 +20,7 @@ class Song(models.Model):
     def __str__(self):
         return self.song_title
 
+    class Meta:
+        unique_together = ('video_id', 'album',)
+
+
