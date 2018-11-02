@@ -5,7 +5,7 @@ from django.db.models import signals
 from configparser import ConfigParser
 
 
-class ExampleAppConfig(AppConfig):
+class BasicConfig(AppConfig):
     name = __package__
 
     def ready(self):

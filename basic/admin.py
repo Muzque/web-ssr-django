@@ -9,4 +9,3 @@ from .models import Comment
 admin.site.register(UserProfile)
 admin.site.register(AppInfo)
 admin.site.register(Comment)
-
