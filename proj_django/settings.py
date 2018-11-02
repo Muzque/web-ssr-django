@@ -106,6 +106,14 @@ DATABASES = {
         'HOST': cfg.get('MySQL', 'MYSQL_HOST'),
         'PORT': cfg.get('MySQL', 'MYSQL_PORT'),
         'default-character-set': 'utf8',
+        'OPTIONS': {
+            'sql_mode': 'TRADITIONAL',
+            'charset': 'utf8',
+            'init_command': 'SET '
+                'storage_engine=INNODB,'
+                'character_set_connection=utf8,'
+                'collation_connection=utf8_bin'
+        }
     }
 }
 
