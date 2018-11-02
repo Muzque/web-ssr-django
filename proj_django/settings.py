@@ -94,22 +94,22 @@ WSGI_APPLICATION = 'proj_django.wsgi.application'
 # https://docs.djangoproject.com/en/2.1/ref/settings/#databases
 
 DATABASES = {
-    # 'default': {
-    #     'ENGINE': 'django.db.backends.sqlite3',
-    #     'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-    # }
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': cfg.get('MySQL', 'MYSQL_DATABASE'),
-        'USER': cfg.get('MySQL', 'MYSQL_ROOT'),
-        'PASSWORD': cfg.get('MySQL', 'MYSQL_ROOT_PASSWORD'),
-        'HOST': cfg.get('MySQL', 'MYSQL_HOST'),
-        'PORT': cfg.get('MySQL', 'MYSQL_PORT'),
-        'default-character-set': 'utf8',
-        'OPTIONS': {
-            'charset': 'utf8mb4'
-        }
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
+    # 'default': {
+    #     'ENGINE': 'django.db.backends.mysql',
+    #     'NAME': cfg.get('MySQL', 'MYSQL_DATABASE'),
+    #     'USER': cfg.get('MySQL', 'MYSQL_ROOT'),
+    #     'PASSWORD': cfg.get('MySQL', 'MYSQL_ROOT_PASSWORD'),
+    #     'HOST': cfg.get('MySQL', 'MYSQL_HOST'),
+    #     'PORT': cfg.get('MySQL', 'MYSQL_PORT'),
+    #     'default-character-set': 'utf8',
+    #     'OPTIONS': {
+    #         'charset': 'utf8mb4'
+    #     }
+    # }
 }
 
 
@@ -163,18 +163,18 @@ LOGGING = {
     }
 }
 
-CACHES = {
-    "default": {
-        "BACKEND": "django_redis.cache.RedisCache",
-        "LOCATION": "redis://{}:6379/0".format(cfg.get("Redis", "REDIS_HOST")),
-        "OPTIONS": {
-            "CLIENT_CLASS": "django_redis.client.DefaultClient",
-        }
-    }
-}
-
-SESSION_ENGINE = "django.contrib.sessions.backends.cache"
-SESSION_CACHE_ALIAS = "default"
+# CACHES = {
+#     "default": {
+#         "BACKEND": "django_redis.cache.RedisCache",
+#         "LOCATION": "redis://{}:6379/0".format(cfg.get("Redis", "REDIS_HOST")),
+#         "OPTIONS": {
+#             "CLIENT_CLASS": "django_redis.client.DefaultClient",
+#         }
+#     }
+# }
+#
+# SESSION_ENGINE = "django.contrib.sessions.backends.cache"
+# SESSION_CACHE_ALIAS = "default"
 
 REST_FRAMEWORK = {
     # Use Django's standard `django.contrib.auth` permissions,
