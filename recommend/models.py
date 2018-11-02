@@ -19,7 +19,7 @@ class Song(models.Model):
     album = models.ForeignKey(Album, on_delete=models.CASCADE, related_name='song_related')
 
     def __str__(self):
-        return self.song_title.encode('utf-8')
+        return self.song_title
 
     class Meta:
         unique_together = ('video_id', 'album',)
