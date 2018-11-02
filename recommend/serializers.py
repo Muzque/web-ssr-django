@@ -4,10 +4,11 @@ from .models import Song
 
 
 class AlbumSerializer(serializers.ModelSerializer):
+    creator = serializers.CharField(source='created_by.username')
 
     class Meta:
         model = Album
-        fields = ('id', 'title', 'logo', 'likes', 'watched', 'created_by')
+        fields = ('id', 'title', 'logo', 'likes', 'watched', 'creator')
 
 
 class SongSerializer(serializers.ModelSerializer):
