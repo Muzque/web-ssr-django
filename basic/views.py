@@ -4,7 +4,9 @@ from django.views.generic import View
 from django.contrib.auth.forms import AuthenticationForm
 from social_core.backends.oauth import BaseOAuth2
 from urllib.parse import urlencode
+from .models import UserProfile
 from .forms import UserForm
+from .forms import ProfileForm
 
 
 class UserFormView(View):
@@ -91,5 +93,21 @@ class FacebookOAuth2(BaseOAuth2):
 
 def index(request):
     return render(request, "basic/index.html", locals())
+
+
+def profile(request, page_num, error_form=None):
+    try:
+        profile = UserProfile.objects.get(belong_to_id=page_num)
+        if request.user.is_authenticated:
+            id = request.user.id
+            username = request.user.username
+            if error_form is not None:
+                form = error_form
+            else:
+                form = ProfileForm
+    except:
+        return redirect(to='index')
+    page_int = int(page_num)
+    return render(request, "basic/profile.html", locals())
 
 

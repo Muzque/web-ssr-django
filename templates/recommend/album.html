@@ -13,8 +13,8 @@
                                     <div class="column" v-for="album in albums">
                                         <div class="ui fluid card">
                                             <div class="content">
-{#                                                <img class="ui avatar image" src="">#}
-                                                    <span>[[ album.creator ]]</span>
+                                                <img class="ui avatar image" v-bind:src="album.avatar">
+                                                <span>[[ album.creator ]]</span>
                                                 <span class="right floated">
                                                     <i class="icon eye"></i>
                                                     [[ album.watched ]]

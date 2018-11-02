@@ -9,4 +9,5 @@ urlpatterns = [
     url(r'^login/', views.LoginView.as_view(), name='login'),
     url(r'^logout/', views.logout_view, name='logout'),
     url(r'^privacy-polite/', views.privacy, name="privacy"),
+    url(r'^profile/(?P<page_num>\d+)/$', views.profile, name='profile'),
 ]

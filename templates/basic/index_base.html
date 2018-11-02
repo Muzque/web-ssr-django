@@ -28,8 +28,12 @@
                 </a>
                 <div class="ui right borderless secondary menu">
                     {% if request.user.is_authenticated %}
-                        <a class="item" style="margin-bottom: 0px">
-                            <img class="ui avatar image" src="{% static '/images/user.png'%}" alt="">
+                        <a class="item" style="margin-bottom: 0px" href="{% url 'basic:profile' request.user.id %}">
+                            {% if request.user.profile.user_img %}
+                                <img class="ui avatar image" src="{{ MEDIA_URL }}{{ request.user.profile.user_img }}">
+                            {% else %}
+                                <img class="ui avatar image" src="{% static '/images/user.png'%}" alt="">
+                            {% endif %}
                             <span style="margin-left:10px">{{ request.user.username }}</span>
                         </a>
                         <a class="ui item" href="{% url 'basic:logout' %}">Logout</a>
