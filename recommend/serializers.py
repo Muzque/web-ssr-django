@@ -6,6 +6,8 @@ from .models import Song
 
 class AlbumSerializer(serializers.ModelSerializer):
     creator = serializers.CharField(source='created_by.profile.nickname')
+    if creator == '':
+        creator = serializers.CharField(source='created_by.username')
     avatar = serializers.ImageField(source='created_by.profile.user_img')
 
     class Meta:

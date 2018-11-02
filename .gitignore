@@ -102,3 +102,4 @@ ENV/
 # Private files
 private/
 collected_static/
+uploads/
