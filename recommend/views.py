@@ -4,6 +4,7 @@ from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
 from django.core.cache import cache
+from common.dbRedis import make_key
 from .models import Album
 from .models import Song
 from .serializers import AlbumSerializer
@@ -13,14 +14,16 @@ from .serializers import SongSerializer
 class AlbumView(APIView):
 
     def get(self, request):
+        name = 'albums'
+        cname = make_key(key=name, key_prefix='', version='1')
         if self.request.version == '1.0':
-            if 'albums' in cache:
-                albums = cache.get('albums')
+            if cname in cache:
+                albums = cache.get(cname)
             else:
                 albums = Album.objects.all()
                 serializer = AlbumSerializer(albums, many=True)
                 albums = serializer.data
-                cache.set('albums', albums, timeout=None)
+                cache.set(name, albums, timeout=None)
         else:
             albums = Album.objects.all()
             serializer = AlbumSerializer(albums, many=True)
@@ -67,14 +70,16 @@ class AlbumDetail(APIView):
 class SongView(APIView):
 
     def get(self, request):
+        name = 'songs'
+        cname = make_key(key=name, key_prefix='', version='1')
         if self.request.version == '1.0':
-            if 'songs' in cache:
-                songs = cache.get('songs')
+            if name in cache:
+                songs = cache.get(cname)
             else:
                 songs = Song.objects.all()
                 serializer = SongSerializer(songs, many=True)
                 songs = serializer.data
-                cache.set('songs', songs, timeout=None)
+                cache.set(name, songs, timeout=None)
         else:
             songs = Song.objects.all()
             serializer = SongSerializer(songs, many=True)
