@@ -67,9 +67,19 @@ class AlbumDetail(APIView):
 class SongView(APIView):
 
     def get(self, request):
-        songs = Song.objects.all()
-        serializer = SongSerializer(songs, many=True)
-        return Response(serializer.data, status=status.HTTP_200_OK)
+        if self.request.version == '1.0':
+            if 'songs' in cache:
+                songs = cache.get('songs')
+            else:
+                songs = Song.objects.all()
+                serializer = SongSerializer(songs, many=True)
+                songs = serializer.data
+                cache.set('songs', songs, timeout=None)
+        else:
+            songs = Song.objects.all()
+            serializer = SongSerializer(songs, many=True)
+            songs = serializer.data
+        return Response(songs, status=status.HTTP_200_OK)
 
     def post(self, request, format=None):
         serializer = SongSerializer(data=request.data)
