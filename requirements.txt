@@ -13,7 +13,7 @@ django-redis==4.9.0
 django-rest-framework-social-oauth2==1.1.0
 djangorestframework==3.8.2
 dnspython==1.15.0
-eventlet==0.24.1
+eventlet==0.31.0
 gevent==1.3.6
 greenlet==0.4.15
 gunicorn==19.9.0
